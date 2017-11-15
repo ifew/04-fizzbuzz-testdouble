@@ -10,6 +10,9 @@ namespace _04_fizzbuzz_testdouble
 
         internal string GetNumber(int v)
         {
+            if(v == 3) {
+                return "Fizz";
+            }
             return v.ToString();
         }
     }
