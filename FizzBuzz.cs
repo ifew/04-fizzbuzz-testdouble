@@ -13,7 +13,8 @@ namespace _04_fizzbuzz_testdouble
             if((v % 15) == 0) {
                 return "FizzBuzz";
             }
-            if((v % 3) == 0) {
+            bool isFizzNumber = v % 3 == 0;
+            if (isFizzNumber) {
                 return "Fizz";
             }
             if((v % 5) == 0) {
