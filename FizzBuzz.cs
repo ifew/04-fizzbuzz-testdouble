@@ -10,7 +10,7 @@ namespace _04_fizzbuzz_testdouble
 
         internal string GetNumber(int v)
         {
-            return "1";
+            return v.ToString();
         }
     }
 }
