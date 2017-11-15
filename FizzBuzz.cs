@@ -13,6 +13,9 @@ namespace _04_fizzbuzz_testdouble
             if(v == 3) {
                 return "Fizz";
             }
+            if(v == 5) {
+                return "Buzz";
+            }
             return v.ToString();
         }
     }
