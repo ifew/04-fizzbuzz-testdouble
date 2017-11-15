@@ -10,7 +10,7 @@ namespace _04_fizzbuzz_testdouble
 
         internal string GetNumber(int v)
         {
-            if((v % 15) == 0) {
+            if(isFizzNumber(v) && isBuzzNumber(v)) {
                 return "FizzBuzz";
             }
 
