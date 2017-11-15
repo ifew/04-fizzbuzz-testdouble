@@ -6,7 +6,7 @@ namespace _04_fizzbuzz_testdouble
     public class FizzBuzzTest
     {
         FizzBuzz fizzbuzz = new FizzBuzz();
-        
+
         [Fact]
         public void InputOneGetOne()
         {
@@ -23,6 +23,17 @@ namespace _04_fizzbuzz_testdouble
             string expected = "2";
 
             string actual = fizzbuzz.GetNumber(2);
+
+            Assert.Equal(expected, actual);
+        }
+
+
+        [Fact]
+        public void InputThreeGetThree()
+        {
+            string expected = "Fizz";
+
+            string actual = fizzbuzz.GetNumber(3);
 
             Assert.Equal(expected, actual);
         }
