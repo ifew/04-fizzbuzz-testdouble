@@ -47,5 +47,16 @@ namespace _04_fizzbuzz_testdouble
 
             Assert.Equal(expected, actual);
         }
+
+
+        [Fact]
+        public void InputFiveGetFive()
+        {
+            string expected = "Buzz";
+
+            string actual = fizzbuzz.GetNumber(5);
+
+            Assert.Equal(expected, actual);
+        }
     }
 }
