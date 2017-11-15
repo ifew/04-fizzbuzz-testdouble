@@ -13,14 +13,18 @@ namespace _04_fizzbuzz_testdouble
             if((v % 15) == 0) {
                 return "FizzBuzz";
             }
-            bool isFizzNumber = v % 3 == 0;
-            if (isFizzNumber) {
+
+            if (isFizzNumber(v)) {
                 return "Fizz";
             }
             if((v % 5) == 0) {
                 return "Buzz";
             }
             return v.ToString();
+        }
+
+        private bool isFizzNumber(int v) {
+            return v % 3 == 0;
         }
     }
 }
