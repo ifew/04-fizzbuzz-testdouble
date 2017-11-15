@@ -14,10 +14,10 @@ namespace _04_fizzbuzz_testdouble
                 return "FizzBuzz";
             }
 
-            if (isFizzNumber(v)) {
+            if(isFizzNumber(v)) {
                 return "Fizz";
             }
-            if((v % 5) == 0) {
+            if(isBuzzNumber(v)) {
                 return "Buzz";
             }
             return v.ToString();
@@ -25,6 +25,10 @@ namespace _04_fizzbuzz_testdouble
 
         private bool isFizzNumber(int v) {
             return v % 3 == 0;
+        }
+
+        private bool isBuzzNumber(int v) {
+            return v % 5 == 0;
         }
     }
 }
